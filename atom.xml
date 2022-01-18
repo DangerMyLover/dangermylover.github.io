@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dangermylover.github.io/</id>
-    <title>猫子门的足球场</title>
-    <updated>2022-01-18T04:00:55.231Z</updated>
+    <title>猫子门的球场</title>
+    <updated>2022-01-18T04:16:02.298Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dangermylover.github.io/"/>
     <link rel="self" href="https://dangermylover.github.io/atom.xml"/>
     <subtitle>你们必晓得真理，真理必叫你们得以自由。 - [约8:32]</subtitle>
     <logo>https://dangermylover.github.io/images/avatar.png</logo>
     <icon>https://dangermylover.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2022, 猫子门的足球场</rights>
+    <rights>All rights reserved 2022, 猫子门的球场</rights>
     <entry>
         <title type="html"><![CDATA[诗歌]]></title>
         <id>https://dangermylover.github.io/post/ce-shi-1/</id>
