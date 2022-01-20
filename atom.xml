@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dangermylover.github.io/</id>
     <title>猫子门的球场</title>
-    <updated>2022-01-20T04:02:00.457Z</updated>
+    <updated>2022-01-20T04:03:30.268Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dangermylover.github.io/"/>
     <link rel="self" href="https://dangermylover.github.io/atom.xml"/>
@@ -15,8 +15,9 @@
         <id>https://dangermylover.github.io/post/ce-shi-1/</id>
         <link href="https://dangermylover.github.io/post/ce-shi-1/">
         </link>
-        <updated>2022-01-09T07:47:40.000Z</updated>
-        <content type="html"><![CDATA[<p>#💨大雪</p>
+        <updated>2022-01-08T18:47:40.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://dangermylover.github.io//post-images/1642651257426.png" alt="" loading="lazy"></figure>
+<p>#💨大雪</p>
 <p>今天多伦多下了很大的雪。多大？积雪60厘米。雪积在阳台上，像一层雪糕。楼下的车像喝醉酒的蚂蚁打旋，行人纷纷走在机动车道上，因为那里的雪薄一些。</p>
 <p>#😷疫情</p>
 <p>白驹过隙，我们在疫情的迫使下，居家已有近2年了。现在多伦多疫情大爆，然Omicron变种毒性似相较低些，因此政府摆出一副保守接纳疫情的姿态。说保守是因为毕竟回到了阶段二，餐厅、健身场所（包括球场）封闭，目的当是要保持住院人数和深切治疗人数不要爆炸。说接纳是因为学校继续开放，且一些重要的数据，包括感染人数、学生学校感染情况数据不再采集或公布，一些人似乎也在许久的居家和沉默之后接受了Omicron的存在，打算在打完全家人的疫苗后继续我们的生活。<strong>这些人之中，有我们。</strong></p>
@@ -29,7 +30,6 @@
 <strong>谁家仆仆谁家温。</strong><br>
 <strong>病树老枝飞新绿，</strong><br>
 <strong>桃李前头笑初春。</strong></p>
-<figure data-type="image" tabindex="1"><img src="https://dangermylover.github.io//post-images/1642651257426.png" alt="" loading="lazy"></figure>
 ]]></content>
     </entry>
 </feed>
