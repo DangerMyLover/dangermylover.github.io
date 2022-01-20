@@ -2048,7 +2048,9 @@ p > code {
     margin-bottom: 10px;
   }
 }
-body {
+.bg-color .bg-color {
+      background: transparent !important;
+    }body {
       background-color: #eee;
     }.header {
         width: 960px;
@@ -2069,7 +2071,7 @@ body {
       border-bottom-color: #339933;
     }
     .archive-timeline-box::after, .tag-timeline-wrapper::after {
-      background: #339933fe;
+      background: #339933ff;
     }h1, h2, h3, h4, h5, h6 {
       color: #339933;
     }
@@ -2115,11 +2117,11 @@ body {
       }.nav-item a:hover {
         color: #222;
       }.nav-item-active {
-      background: #339933fe;
+      background: #339933ff;
     }
 
     .nav-item:hover {
-      background: #339933fe;
+      background: #339933ff;
       color: rgba(0, 0, 0, 0.98);
     }.site-author-image {
       border-radius: 50%;
@@ -2155,7 +2157,13 @@ body {
       color: #fc6423;
       border-bottom-color: #fc6423;
     }.bg-color {
-      background-color: #fffffffe;
+      background-color: #ffffffff;
+    }
+    .gemini .blog-header, .gemini .sidebar-wrapper, .gemini .article-wrapper, .gemini .post, .gemini .page, .gemini .section, .gemini .section-box, .gemini .sidebar-box, .gemini .friends-section {
+      border-radius: 15px;
+    }
+    .pisces .blog-header, .pisces .sidebar-wrapper, .pisces .article-wrapper, .pisces .section, .pisces .sidebar-box, .pisces .friends-section {
+      border-radius: 15px;
     }
     .site-meta {
       background: #000 !important;
@@ -2170,7 +2178,7 @@ body {
       color: #339933 !important;
     }
     .mist .site-title i {
-      background: #339933fe;
+      background: #339933ff;
     }.box-shadow-wrapper {
       box-shadow: none !important;
     }body {
