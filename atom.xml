@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dangermylover.github.io/</id>
     <title>猫子门的球场</title>
-    <updated>2022-01-20T04:03:30.268Z</updated>
+    <updated>2022-01-21T23:51:06.607Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dangermylover.github.io/"/>
     <link rel="self" href="https://dangermylover.github.io/atom.xml"/>
@@ -10,6 +10,17 @@
     <logo>https://dangermylover.github.io/images/avatar.png</logo>
     <icon>https://dangermylover.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, 猫子门的球场</rights>
+    <entry>
+        <title type="html"><![CDATA[宝宝的画]]></title>
+        <id>https://dangermylover.github.io/post/bao-bao-de-hua/</id>
+        <link href="https://dangermylover.github.io/post/bao-bao-de-hua/">
+        </link>
+        <updated>2022-01-21T10:28:25.000Z</updated>
+        <content type="html"><![CDATA[<p>宝宝今天努力画的画没能在课堂里得到应有的关注，故此将其扫描上传。<br>
+最近宝宝的课程设计收集数据和简单的调查研究，他的课题是<strong>科摩多巨蜥</strong>。<br>
+<img src="https://s2.loli.net/2022/01/22/rRl5EobtO18xi7S.jpg" alt="20220121_Eric_KomodoDragon.jpg" loading="lazy"></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[大雪、疫情和诗歌]]></title>
         <id>https://dangermylover.github.io/post/ce-shi-1/</id>
