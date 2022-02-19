@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dangermylover.github.io/</id>
     <title>猫子门的球场</title>
-    <updated>2022-02-19T07:18:27.373Z</updated>
+    <updated>2022-02-19T07:20:26.488Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dangermylover.github.io/"/>
     <link rel="self" href="https://dangermylover.github.io/atom.xml"/>
@@ -184,23 +184,6 @@
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[宝宝的画]]></title>
-        <id>https://dangermylover.github.io/post/bao-bao-de-hua/</id>
-        <link href="https://dangermylover.github.io/post/bao-bao-de-hua/">
-        </link>
-        <updated>2022-01-20T21:28:25.000Z</updated>
-        <content type="html"><![CDATA[<p>宝宝今天努力画的画没能在课堂里得到应有的关注，故此将其扫描上传。<br>
-最近宝宝的课程设计收集数据和简单的调查研究，他的课题是<strong>科摩多巨蜥</strong>。<br>
-<img src="https://s2.loli.net/2022/01/22/rRl5EobtO18xi7S.jpg" alt="20220121_Eric_KomodoDragon.jpg" loading="lazy"><br>
-<em>“沙滩上的科摩多巨蜥”，2022年1月</em></p>
-<p>宝宝很少画这样严肃认真的写实题材，通常画抽象图案或是有情节的漫画类。我找了找他以前画的写实画，似乎在细节，控制等等方面还是有可见提升的。</p>
-<p><img src="https://s2.loli.net/2022/01/22/WIBbH7j82LCk3yu.jpg" alt="20191216_ERIC_Artwork03.jpeg" loading="lazy"><br>
-<em>“快乐坦克”，2019年12月</em></p>
-<p><img src="https://s2.loli.net/2022/01/22/25qyYnFsh4BP6J9.jpg" alt="20191221_ERIC_Artwork01.jpeg" loading="lazy"><br>
-<em>“NoNoNo恐龙”，2019年12月</em></p>
-]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[大雪、疫情和诗歌]]></title>
         <id>https://dangermylover.github.io/post/ce-shi-1/</id>
         <link href="https://dangermylover.github.io/post/ce-shi-1/">
@@ -224,6 +207,28 @@
 <strong>I ask, whose family is busy, and whose family rests in warmth?</strong><br>
 <strong>Old branches on a sick tree will be groomed with green leafs again.</strong><br>
 <strong>Not far from here, peach and plum trees smile in the chilling air of the early spring.</strong></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[关于]]></title>
+        <id>https://dangermylover.github.io/post/about/</id>
+        <link href="https://dangermylover.github.io/post/about/">
+        </link>
+        <updated>2019-01-23T20:09:48.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
+</blockquote>
+<h2 id="关于本站">🏠 关于本站</h2>
+<p>这是猫子门的个人博客，记录一些生活中的事件、思考，也会写一些作品，希望能维持我自己的兴趣，缓解家人对我的思念，也让我能得到自我实现的快乐。<br>
+这个博客是给我的家人朋友、关心我的人看的。</p>
+<h2 id="博主是谁">👨‍💻 博主是谁</h2>
+<p>看这个博客的人不需要我的自我介绍了。</p>
+<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
+<p>足球，写作，解决难题，学习新知识。</p>
+<h2 id="联系我呀">📬 联系我呀</h2>
+<p>网址：https://dangermylover.github.io/<br>
+微信：emolus<br>
+邮件：Philip@ToK12.com</p>
 ]]></content>
     </entry>
 </feed>
