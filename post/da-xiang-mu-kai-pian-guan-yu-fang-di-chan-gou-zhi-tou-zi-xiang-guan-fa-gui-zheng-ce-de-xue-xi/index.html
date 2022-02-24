@@ -8,7 +8,7 @@
 <meta name="keywords" content="猫子门的博客">
 <meta name="description" content="你们必晓得真理，真理必叫你们得以自由。 - [约8:32]">
 <meta name="theme-color" content="#000">
-<title>猫子门的球场</title>
+<title>大项目开篇：关于房地产购置、投资、相关法规政策的学习 | 猫子门的球场</title>
 <link rel="shortcut icon" href="/favicon.ico?v=1645679768855">
 <link rel="stylesheet" href="/media/css/gemini.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
@@ -41,6 +41,8 @@
 
 
 
+  <meta name="description" content="大项目开篇：关于房地产购置、投资、相关法规政策的学习" />
+  <meta name="keywords" content="" />
 </head>
 
 <body>
@@ -105,7 +107,7 @@
               
             
             
-            <li class="nav-item nav-item-active">
+            <li class="nav-item ">
               
               
                 <a href="/tags" target="_self">
@@ -177,10 +179,26 @@
   <div class="main-continer">
     
     <div
-      class="section-layout  gemini">
+      class="section-layout gemini ">
       <div class="section-layout-wrapper">
-        <div id="sidebarMeta" class="sidebar">
-    
+        
+
+<div class="sidebar">
+  
+    <div class="sidebar-box box-shadow-wrapper bg-color right-motion" id="sidebar">
+      
+        <div class="post-list-sidebar">
+          <div class="sidebar-title">
+            <span id="tocSideBar" class="sidebar-title-item sidebar-title-active language" data-lan="index">文章目录</span>
+            <span id="metaSideBar" class="sidebar-title-item language" data-lan="preview">站点概览</span>
+          </div>
+        </div>
+      
+      <div class="sidebar-body gemini" id="sidebar_body">
+        
+          
+            <div class="post-side-meta" id="post_side_meta">
+              
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
     <img class="site-author-image right-motion" src="/images/avatar.png"/>
@@ -242,202 +260,424 @@
 
 
 </div>
+            </div>
+            <div class="post-toc sidebar-body-active" id="post_toc" style="opacity: 1;">
+              <div class="toc-box right-motion">
+  <div class="toc-wrapper  auto"
+    id="toc_wrapper">
+    <ul class="markdownIt-TOC">
+<li><a href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%AD%A6%E4%B9%A0%E6%88%BF%E5%9C%B0%E4%BA%A7%E8%B4%AD%E7%BD%AE-%E6%8A%95%E8%B5%84-%E7%9B%B8%E5%85%B3%E6%B3%95%E8%A7%84%E6%94%BF%E7%AD%96">为什么要学习房地产购置、投资、相关法规政策？</a><br>
+*
+<ul>
+<li><a href="#%E9%A6%96%E5%85%88%E6%98%AF%E5%AF%B9%E4%BF%A1%E6%81%AF%E4%B8%8D%E5%AF%B9%E7%A7%B0%E7%9A%84%E8%A7%84%E9%81%BF">首先是对信息不对称的规避。</a></li>
+<li><a href="#%E5%85%B6%E6%AC%A1%E6%98%AF%E6%88%91%E4%BB%AC%E6%8B%A5%E6%9C%89%E4%BA%86%E8%B6%B3%E5%A4%9F%E7%9A%84%E5%AD%A6%E4%B9%A0%E8%83%BD%E5%8A%9B">其次是我们拥有了足够的学习能力。</a></li>
+<li><a href="#%E6%9C%80%E5%90%8E%E6%98%AF%E7%A4%BE%E4%BC%9A%E7%BB%8F%E9%AA%8C%E7%9A%84%E6%88%90%E7%86%9F%E8%AE%A9%E6%88%91%E5%AF%B9%E6%9C%89%E5%88%A9%E7%9B%8A%E5%86%B2%E7%AA%81%E7%9A%84%E5%90%84%E6%96%B9%E9%9D%A2%E5%A4%B1%E5%8E%BB%E4%BF%A1%E5%BF%83">最后是社会经验的成熟，让我对有利益冲突的各方面失去信心。</a></li>
+</ul>
+</li>
+<li><a href="#%E9%82%A3%E4%B9%88%E6%89%AC%E5%B8%86%E8%B5%B7%E8%88%AA">那么，扬帆起航？</a></li>
+</ul>
+
+  </div>
 </div>
+
 <script>
-  let sidebarMeta = document.querySelector('#sidebarMeta');
-  let scheme = 'gemini';
-  let sidebarWrapper = document.querySelector('.sidebar-wrapper');
-  if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
-    document.addEventListener('scroll', function(e) {
-      if (document.scrollingElement.scrollTop > parseInt(sidebarMeta.style.marginTop) + 10) {
-        sidebarWrapper.classList.add('home-sidebar-fixed')
-      } else {
-        sidebarWrapper.classList.remove('home-sidebar-fixed')
+
+  let lastTop = 0, lList = [], hList = [], postBody, lastIndex = -1;
+  let active = 'active-show', activeClass = 'active-current';
+  let tocWrapper = document.querySelector('#toc_wrapper');
+  let tocContent = tocWrapper.children[0];
+  let autoNumber = tocWrapper && tocWrapper.classList.contains('auto-number');
+
+  function addTocNumber(elem, deep) {
+    if (!elem) {
+      return;
+    }
+    let prop = elem.__proto__;
+
+    if (prop === HTMLUListElement.prototype) {
+      for (let i = 0; i < elem.children.length; i++) {
+        addTocNumber(elem.children[i], deep + (i + 1) + '.');
       }
+    } else if (prop === HTMLLIElement.prototype) {
+      // 保存li元素
+      if (elem.children[0] && elem.children[0].__proto__ === HTMLAnchorElement.prototype) {
+        lList.push(elem);
+      }
+      for (let i = 0; i < elem.children.length; i++) {
+        let cur = elem.children[i];
+        if (cur.__proto__ === HTMLAnchorElement.prototype) {
+          if (autoNumber) {
+            cur.text = deep + ' ' + cur.text;
+          }
+        } else if (cur.__proto__ === HTMLUListElement.prototype) {
+          addTocNumber(cur, deep);
+        }
+      }
+    }
+  }
+
+  function removeParentActiveClass() {
+    let parents = tocContent.querySelectorAll('.' + active)
+    parents.forEach(function (elem) {
+      elem.classList.remove(active);
     });
   }
-  </script>
-        <div class="section-box box-shadow-wrapper">
-          <section class="section tags-section bg-color posts-expand">
-            <div class="tags-box">
-  <div class="tag-cloud-title language" data-lan="cloud-tags" data-count="4">
-    非常好！目前共计 4 个标签，继续努力！
-  </div>
-  <div class="tag-cloud-list" id="tags">
-    
-      
-      
-        
-      
-        
-          
-            
-      
-        
-          
-            
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-          
-            
-      
-        
-      
-      <a class="cloud-tag" href="https://dangermylover.github.io/tag/ASGEaNDOj/" rel="3">作品</a>
-    
-      
-      
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-            
-      
-        
-          
-        
-      
-        
-          
-        
-          
-        
-      
-        
-      
-      <a class="cloud-tag" href="https://dangermylover.github.io/tag/1Zp1qhdr8/" rel="1">评论</a>
-    
-      
-      
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-            
-      
-        
-          
-        
-          
-        
-      
-        
-      
-      <a class="cloud-tag" href="https://dangermylover.github.io/tag/puNKcgyF7/" rel="1">生活</a>
-    
-      
-      
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-            
-      
-        
-      
-      <a class="cloud-tag" href="https://dangermylover.github.io/tag/ji5EeQ-_Y/" rel="1">日记</a>
-    
-  </div>
-</div>
-<script>
 
-  let fontStart = 12, fontEnd = 30, colorStart = '#666', colorEnd = '#000';
-  let tags = document.querySelector('#tags').children;
-  let counts = [];
-  for(let i = 0; i < tags.length; i++) {
-    counts.push(tags[i].rel);
-  }
-  let lowest = Math.min.apply(null,counts), highest = Math.max.apply(null,counts);;
-  let range = highest - lowest;
-  if (range === 0) {
-    range = 1;
-  }
-  let fontIncr, colorIncr;
-  fontIncr = (fontEnd - fontStart) / range;
-  
-  let sColorArr = toRGB(colorStart), eColorArr = toRGB(colorEnd);
-
-  for(let i = 0; i < tags.length; i++) {
-    let disCount = tags[i].rel - lowest;
-    let fontSize = fontStart + disCount * fontIncr;
-    let style = 'font-size: ' + fontSize + 'px;';
-    let arr = [];
-    for(let c = 0; c < sColorArr.length; c++) {
-      if (disCount === 0) {
-        disCount = 1;
-      }
-      let val = (sColorArr[c] - eColorArr[c]) / range * disCount;
-      if (val >= 100) {
-        val = eColorArr[c];
-      } else if (val <= 0) {
-        val = sColorArr[c];
-      }
-      arr[c] = Math.floor(val);
+  function addActiveClass(index) {
+    if (index >= 0 && index < hList.length) {
+      lList[index].classList.add(activeClass);
     }
-    style += 'color: ' + toHex(arr);
-    tags[i].style = style;
   }
 
-  function toRGB(code) {
-    if (code.length === 4) {
-      code = code.replace(/(\w)(\w)(\w)/gi, "\$1\$1\$2\$2\$3\$3");
+  function removeActiveClass(index) {
+    if (index >= 0 && index < hList.length) {
+      lList[index].classList.remove(activeClass);
     }
-    var hex = /(\w{2})(\w{2})(\w{2})/.exec(code);
-    return [parseInt(hex[1], 16), parseInt(hex[2], 16), parseInt(hex[3], 16)];
   }
 
-  function toHex(ary) {
-    return "#" + ((1 << 24) + (ary[0] << 16) + (ary[1] << 8) + ary[2]).toString(16).slice(1);
+  function addActiveLiElemment(elem, parent) {
+    if (!elem || elem === parent) {
+      return;
+    } else {
+      if (elem.__proto__ === HTMLLIElement.prototype) {
+        elem.classList.add(active);
+      }
+      addActiveLiElemment(elem.parentElement, parent);
+    }
   }
+
+  function showToc() {
+    if (tocWrapper) {
+      postBody = document.querySelector('#post_body');
+      for (let i = 0; i < postBody.children.length; i++) {
+        if (postBody.children[i].__proto__ === HTMLHeadingElement.prototype) {
+          hList.push(postBody.children[i]);
+        }
+      }
+      if (tocWrapper.classList.contains('compress')) {
+        tocContent.classList.add('closed');
+      } else if (tocWrapper.classList.contains('no_compress')) {
+        tocContent.classList.add('expanded');
+      } else {
+        if (hList.length > 10) {
+          active = 'active-hidden'
+          tocContent.classList.add('closed');
+        } else {
+          tocContent.classList.add('expanded');
+        }
+      }
+    }
+  }
+
+  (function () {
+    // 处理不是从#一级标题开始目录
+    if (tocContent.children.length === 1 && tocContent.children[0].__proto__ === HTMLLIElement.prototype) {
+      let con = tocContent.children[0].children[0];
+      tocContent.innerHTML = con.innerHTML;
+    }
+    let markdownItTOC = document.querySelector('.markdownIt-TOC');
+    let innerHeight = window.innerHeight;
+    markdownItTOC.style = `max-height: ${innerHeight - 80 > 0 ? innerHeight - 80 : innerHeight}px`
+    addTocNumber(tocContent, '');
+  })();
+
+  document.addEventListener('scroll', function (e) {
+    if (lList.length <= 0) {
+      return;
+    }
+    let scrollTop = document.scrollingElement.scrollTop + 10;
+    let dir;
+
+    if (lastTop - scrollTop > 0) {
+      dir = 'up';
+    } else {
+      dir = 'down';
+    }
+
+    lastTop = scrollTop;
+    if (scrollTop <= 0) {
+      if (lastIndex >= 0 && lastIndex < hList.length) {
+        lList[lastIndex].classList.remove(activeClass);
+      }
+      return;
+    }
+
+    let current = 0, hasFind = false;
+    for (let i = 0; i < hList.length; i++) {
+      if (hList[i].offsetTop > scrollTop) {
+        current = i;
+        hasFind = true;
+        break;
+      }
+    }
+    if (!hasFind && scrollTop > lList[lList.length - 1].offsetTop) {
+      current = hList.length - 1;
+    } else {
+      current--;
+    }
+    if (dir === 'down') {
+      if (current > lastIndex) {
+        addActiveClass(current);
+        removeActiveClass(lastIndex)
+        lastIndex = current;
+        removeParentActiveClass();
+        lList[current] && addActiveLiElemment(lList[current].parentElement, tocContent);
+      }
+    } else {
+      if (current < lastIndex) {
+        addActiveClass(current);
+        removeActiveClass(lastIndex);
+        lastIndex = current;
+        removeParentActiveClass();
+        lList[current] && addActiveLiElemment(lList[current].parentElement, tocContent);
+      }
+    }
+  });
+
+
+  window.addEventListener('load', function () {
+    showToc();
+    document.querySelector('#sidebar').style = 'display: block;';
+    tocWrapper.classList.add('toc-active');
+    setTimeout(function () {
+      if ("createEvent" in document) {
+        let evt = document.createEvent("HTMLEvents");
+        evt.initEvent("scroll", false, true);
+        document.dispatchEvent(evt);
+      }
+      else {
+        document.fireEvent("scroll");
+      }
+    }, 500)
+  })
 
 </script>
-          </section>
+            </div>
+          
+        
+      </div>
+    </div>
+  
+</div>
+<script>
+  const SIDEBAR_TITLE_ACTIVE = 'sidebar-title-active';
+  const SIDEBAR_BODY_ACTIVE = 'sidebar-body-active';
+  const SLIDE_UP_IN = 'slide-up-in';
+
+  let sidebar = document.querySelector('#sidebar'),
+  tocSideBar = document.querySelector('#tocSideBar'),
+  metaSideBar = document.querySelector('#metaSideBar'),
+  postToc = document.querySelector('#post_toc'),
+  postSiteMeta = document.querySelector('#post_side_meta'),
+  sidebarTitle = document.querySelector('.sidebar-title'),
+  sidebarBody = document.querySelector('#sidebar_body');
+
+  tocSideBar && tocSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  metaSideBar && metaSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  function toggleSidebar(e) {
+    let currentTitle = document.querySelector("."+SIDEBAR_TITLE_ACTIVE);
+    if (currentTitle == e.srcElement) {
+      return ;
+    }
+    let current, showElement, hideElement;
+    if (e.srcElement == metaSideBar) {
+      showElement = postSiteMeta;
+      hideElement = postToc;
+    } else if (e.srcElement == tocSideBar){
+      showElement = postToc;
+      hideElement = postSiteMeta;
+    }
+    currentTitle.classList.remove(SIDEBAR_TITLE_ACTIVE);
+    e.srcElement.classList.add(SIDEBAR_TITLE_ACTIVE);
+
+    jQuery.Velocity(hideElement, 'stop');
+    jQuery.Velocity(hideElement, 'transition.slideUpOut', {
+      display: 'none',
+      duration: 200,
+      complete: function () {
+        jQuery.Velocity(showElement, 'transition.slideDownIn', {
+          duration: 200
+        });
+      }
+    })
+    hideElement.classList.remove(SIDEBAR_BODY_ACTIVE);
+    showElement.classList.add(SIDEBAR_BODY_ACTIVE);
+  }
+
+  postToc && postToc.addEventListener('transitionend', function() {
+    this.classList.remove(SLIDE_UP_IN);
+  });
+
+  if (sidebarBody) {
+    if (sidebarBody.classList.contains('pisces') || sidebarBody.classList.contains('gemini')) {
+      let hasFix = false;
+      let scrollEl = document.querySelector('.main-continer');
+      let limitTop = document.querySelector('#nav_ul').children.length * 42 + 162;
+      window.addEventListener('scroll', function(e) {
+        if (document.scrollingElement.scrollTop >= limitTop) {
+          if (!hasFix) {
+            sidebar.classList.add('sidebar-fixed');
+            hasFix = true;
+          }
+        } else {
+          if (hasFix) {
+            sidebar.classList.remove('sidebar-fixed');
+            hasFix = false;
+          }
+        }
+      });
+    }
+  }
+  
+</script>
+        <div class="section-box box-shadow-wrapper">
+          <div class="section bg-color post post-page">
+            <section class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://dangermylover.github.io/post/da-xiang-mu-kai-pian-guan-yu-fang-di-chan-gou-zhi-tou-zi-xiang-guan-fa-gui-zheng-ce-de-xue-xi/"> 大项目开篇：关于房地产购置、投资、相关法规政策的学习 </a>
+  </h1>
+  <div class="post-meta">
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span class="language" data-lan="publish">发布于</span>
+      <span class="publish-time" data-t="2022-02-23 09:06:30">2022-02-23</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
+    
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span
+        >8<span class="language" data-lan="minute"
+          >分钟</span
+        ></span
+      >
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span
+        >2365<span class="pc-show language" data-lan="words"
+          >字数</span
+        ></span
+      >
+    </span>
+    
+  </div>
+</section>
+
+            <div class="post-body next-md-body" id="post_body">
+              <figure data-type="image" tabindex="1"><img src="http://locatecondo.com/wp-content/uploads/2020/12/home-prices-705x439-1.jpg" alt="" loading="lazy"></figure>
+<p>OK，这个项目终于开始了。激动吗，宝宝们？</p>
+<h1 id="为什么要学习房地产购置-投资-相关法规政策">为什么要学习房地产购置、投资、相关法规政策？</h1>
+<p>脱离了中国人熟悉的“大家长化”社会的我们，在加拿大这样体制、思维、哲学逻辑完全不同的国家学习，吃了不少的苦头。</p>
+<h3 id="首先是对信息不对称的规避">首先是对信息不对称的规避。</h3>
+<p>在国内信息不对称对于大多数人来说没有太大影响，因为中国属于大政府政治，政府机构庞大，所管辖的方面也很多，政府大量参与社会管理意味着身为草民的我们可以无忧无虑的活着，不用担心错误选择带来的失败恶果，但也意味着我们几乎不可能消除恶意信息不对称对我们的剥削，即如果信息不对称是由政府主导、授意或允许的，那么草民几乎一定会被薅羊毛。<br>
+所以我们在国内上学的时候，前进的路途非常的简单和无脑。学习，考试，考的好的话上名气大的大学，毕业后就能找好的工作，就能有好的前途。很简单，很纯粹，你不用去计划，不用安排，不用思考，学习就是了。学什么？当然是考什么就学什么。但是我们也没法摆脱这样的规定好的路线。比方说，高考制度对学习本质（乃是出于对知识的探索，对全人的建立和发展等等）的消极影响。很多人其实感觉到了高考制度对学生的消极影响（当然高考有它的存在的意义和优点），但是你有感觉却没有力量去摆脱。为什么？原因有很多。有一条是国家引导的信息不对称。我不是说国家这样引导是带有恶意的，但我认为国家引导的信息不对称是出于中国近代现代历史上的苦难对执政者造成的恐惧和心理疤痕。</p>
+<p>我们回头来想想：<br>
+<em>为什么高考考的好，就能对社会创造更大的价值？</em><br>
+<em>为什么都说中国学生数理化好，中国却少有数理化诺奖得主、国际领先的科学家？</em><br>
+<em>大家都想让孩子成为社会的栋梁，为什么栋梁级的人物出现的那么少？所出现的栋梁级人物，真的是按照中国教育的经典路线所培训出来的吗？</em></p>
+<p><strong>当国家这位“大家长”引导我们的孩子，让社会上下一体认为学习就是考试，让人民认为教育就是名牌大学，让人民认为幸福就是经济利益，那么人民几乎不能无视这样庞大的信息源，去看到什么是学习，什么是教育，什么是幸福。</strong></p>
+<blockquote>
+<p>释迦摩尼在两千多年前就做过实验了，经济利益与幸福程度的关联系数接近于零。我们的“大家长”出于自己对“贫穷落后就要挨打”的恐惧而引导我们，给我们规划了路线。有谁出于恐惧，做出过正确的决定呢？</p>
+</blockquote>
+<p>无论如何，在国内习惯了**“信息不对称也没关系，反正信息不对称也无法摆脱”<strong>的我们，忽然之间来到了一个</strong>“你必须自己负责规划你的人生，不选择或错误选择会造成重大伤亡”**的西方国家，无可避免的要经历以下这一段路程。</p>
+<blockquote>
+<p><strong>试图维持就有习惯（不主动擭取信息） &gt; 损失 &gt; 痛苦害怕但对已经习惯了国内模式的自己无可奈何 &gt; 重大无法挽回的人生损失 &gt; 提升能力，吸取经验 &gt; 养成主动擭取信息的能力和习惯</strong></p>
+</blockquote>
+<p><strong>我自己因为没有主动擭取信息的能力和习惯，在上学时未能只能合理的学习计划，未能规划自己的人生，导致毕业后面对诸多就业困难，和我一样的同学们几乎全员无法就业，只好选择回国，而我侥幸得到一份工作，却不能让我所学的完全得以发挥和运用。如果好好规划学习和人生，我知道自己一定会比现在走的好得多。</strong></p>
+<p>当然，其实也有很多同学在产生重大无法挽回的人生损失后也未必会痛定思痛。而经过了十年的人生，终于养成了主动擭取信息的能力和习惯的我们，怎么能不在处理重大人生事件的时候花费应有的时间，做擭取信息的工作呢？</p>
+<h3 id="其次是我们拥有了足够的学习能力">其次是我们拥有了足够的学习能力。</h3>
+<blockquote>
+<p><strong>英文阅读？</strong><br>
+<strong>社会经验？</strong><br>
+<strong>研究能力？</strong></p>
+</blockquote>
+<p>这些都在十余年的学习和工作中逐步建立。现在的我们拥有了学习我们所需要、想要了解的一切知识的能力。而至关重要的则是下面这一条。</p>
+<blockquote>
+<p><strong>学习的习惯和信心？</strong></p>
+</blockquote>
+<p>如果不相信自己能掌握知识，如果不相信自己能在业余时间里做好学习，我们就可能自然的觉得*“太难了”、“不可能”、“太麻烦”或者“没必要吧”*。</p>
+<p>有几位我所认识的先生和女士在这方面对我有极大的鼓励。</p>
+<ul>
+<li>首先是我的<strong>妻子</strong>，也是我唯一要提及的女士。她的人生和为人处事之道从不规避艰险，不断地让我看到努力和认真的价值。</li>
+<li>其次是<strong>梁牧师</strong>，一位工作和学习能力极强的前辈。在工作后，他也一直保持着优秀的学习习惯。需要管理就学，需要技能就学，且能学的好。我的智力并不较他人逊色，而他对学习的态度鼓舞我不断学习新的技能，来解决工作和学习中遇到的新问题。</li>
+<li>最后是<strong>郑博士</strong>，除了本职工作上非常出色，我认为他也是以为教育家。和他谈话时他对我的工作和学习能力表示了极大的信任，这样的信任让我以更积极的心态面对挑战。</li>
+</ul>
+<h3 id="最后是社会经验的成熟让我对有利益冲突的各方面失去信心">最后是社会经验的成熟，让我对有利益冲突的各方面失去信心。</h3>
+<p>这个可以说和我所学的专业，我从父辈接受的灌输，以及我的人生社会经验都密切相关。</p>
+<p>商学告诉我们，当相关各方面存在利益冲突时，如何将各方面的利益考虑在计划内是非常有必要的。所以说三国时，吴国在赤壁面对八十万曹军的时候，孙权意识到：</p>
+<blockquote>
+<p>所有人都可以投降，只有我不可以。投降符合臣子的利益，无非易主而已，抵抗反而会让自己处于危险中。但是投降绝不符合王的利益，因为王一定会被架空、杀害。</p>
+</blockquote>
+<p>所以说，<strong>地产中介</strong>可以信任吗？不可以。他们的利益点在于成交，而且是立刻，马上，不要犹豫的成交。他们说的话都符合他们自己的利益。</p>
+<p><strong>产业协会</strong>可以信任吗？不一定。这帮人是为地产中介服务的。他们的利益点在于服务地产中介。</p>
+<p><strong>政府监管机构</strong>可以信任吗？也许可以信任到一定程度。政府监管的目的是市场有序运行，为此目的，他们也需要维持产业协会、地产中介、相关专业人士等各方面的利益。而且政府部门的建议一般都是侧重安全。因为万一你弄不好，他们得担责任。</p>
+<p><strong>新闻媒体</strong>呢？他们无非是被资本操纵的喉舌。资本是谁？是房产的持有者，是地产中介、产业协会。</p>
+<p>所以，信任谁呢？我的答案是谁都听，谁也不全信。<br>
+我准备从<strong>学术</strong>入手，了解房产市场的价格模型、数据、历史事件对市场的影响。<br>
+然后从<strong>政府监管机构RECO</strong>掌握保护自己安全的方法、策略，以及被伤害时反击的手段。<br>
+以上为阶段一：背景知识。<br>
+而后，通过与<strong>朋友、前辈</strong>访谈交流，反思了解自己的购房需求，吸取现实经验。<br>
+再后，通过<strong>产业协会CREA、OREA、TRREB</strong>了解和甄别所需用的近期动态和数据。<br>
+再后，通关观察<strong>成交记录、对比广告信息</strong>了解市场基本情况。<br>
+再后，接触<strong>地产律师、贷款咨询师、验房师等非直接利益的专业人士</strong>，以便建立多方面的知识、角度。<br>
+以上为阶段二：前沿知识。<br>
+最后，进入市场，按设定好的策略和顺序接触<strong>地产中介</strong>，购买房屋。地产中介所说的所有话一定要在这最后一步才可以去看去听，这样才可以避免被误导欺骗。</p>
+<h1 id="那么扬帆起航">那么，扬帆起航？</h1>
+<p>是的。接下来的半年我估计都会常常发表自己的学习记录和心得。敬请期待！</p>
+<p>&lt;本文完&gt;</p>
+
+            </div>
+            
+              <div class="reward-btn">
+                <div class="reward-btn-text">赞赏</div>
+              </div>
+            
+            
+              <div class="post-footer">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong class="language" data-lan="author">本文作者：</strong>
+      猫子门
+    </li>
+    <li class="post-copyright-link">
+      <strong class="language" data-lan="link">本文链接：</strong>
+      <a href="https://dangermylover.github.io/post/da-xiang-mu-kai-pian-guan-yu-fang-di-chan-gou-zhi-tou-zi-xiang-guan-fa-gui-zheng-ce-de-xue-xi/" title="大项目开篇：关于房地产购置、投资、相关法规政策的学习">https://dangermylover.github.io/post/da-xiang-mu-kai-pian-guan-yu-fang-di-chan-gou-zhi-tou-zi-xiang-guan-fa-gui-zheng-ce-de-xue-xi/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong class="language" data-lan="copyright">版权声明： </strong>
+      本博客所有文章除特别声明外，均采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i> BY-NC-SA</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+  <div class="tags">
+    
+  </div>
+  <div class="nav">
+    <div class="nav-prev">
+      
+    </div>
+    <div class="nav-next">
+      
+        <a class="nav-pc-next" title="MV - 纪念宝宝来加拿大第一年“童心永驻”的时光" href="https://dangermylover.github.io/post/mv-ji-nian-bao-bao-lai-jia-na-da-di-yi-nian-tong-xin-yong-zhu-de-shi-guang/">MV - 纪念宝宝来加拿大第一年“童心永驻”的时光</a>
+        <a class="nav-mobile-next" title="MV - 纪念宝宝来加拿大第一年“童心永驻”的时光" href="https://dangermylover.github.io/post/mv-ji-nian-bao-bao-lai-jia-na-da-di-yi-nian-tong-xin-yong-zhu-de-shi-guang/">下一篇</a>
+        <i class="fa fa-chevron-right"></i>
+      
+    </div>
+  </div>
+</div>
+            
+            
+  
+
+          </div>
         </div>
       </div>
     </div>
@@ -682,6 +922,223 @@
     parent.insertBefore(aelem, next);
   });
 </script>
+    <div class="reward-mask" style="display: none;">
+  <div class="reward-relative">
+    <span class="close" aria-hidden="true">x</span>
+    <div class="reward-body">
+      <h2>感谢您的支持，我会继续努力的!</h2>
+      <div class="reward-img-box">
+        <div style="position: relative; width: 140px; height: 140px;">
+          
+          
+          
+        </div>
+      </div>
+      <p class="reward-word">扫码打赏，你说多少就多少</p>
+      <p class="reward-tip"> </p>
+    </div>
+    <div class="bottom">
+      
+      
+    </div>
+  </div>
+</div>
+<style>
+  .reward-mask {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #00000054;
+  }
+
+  .reward-relative {
+    position: relative;
+    width: 480px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #fff;
+    top: 50%;
+    margin-top: -205px;
+  }
+
+  .reward-relative .close {
+    position: absolute;
+    right: 10px;
+    font-weight: normal;
+    font-size: 16px;
+    color: #929292;
+  }
+
+  .reward-body {
+    padding: 40px 20px 20px;
+  }
+
+  .bottom {
+    display: flex;
+  }
+
+  .reward-btn {
+    text-align: center;
+  }
+
+  .reward-btn-text {
+    display: inline-block;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    background-color: #ff9734;
+    color: #FFF;
+    margin-top: 20px;
+  }
+
+  .pay-text {
+    margin-top: 10px;
+    padding: 10px;
+    flex: 1;
+    transition: all .2s linear;
+  }
+
+  .pay-text:hover {
+    background-color: #a5a5a536;
+  }
+
+  .reward-body h2 {
+    padding-top: 10px;
+    text-align: center;
+    color: #a3a3a3;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 0 20px;
+  }
+
+  .reward-body h2:after,
+  .reward-body h2:before {
+    font-family: Arial, Helvetica, sans-serif;
+    background: 0 0;
+    width: 0;
+    height: 0;
+    font-style: normal;
+    color: #eee;
+    font-size: 80px;
+    position: absolute;
+    top: 20px;
+  }
+
+  .reward-body h2:before {
+    content: '\201c';
+    left: 50px;
+  }
+
+  .reward-body h2:after {
+    content: '\201d';
+    right: 80px;
+  }
+
+  .reward-img-box {
+    display: inline-block;
+    padding: 10px;
+    border: 6px solid #ea5f00;
+    margin: 0 auto;
+    border-radius: 3px;
+    position: relative;
+  }
+
+  .reward-img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (max-width: 767px) {
+    .reward-relative {
+      height: 100%;
+      top: 0px;
+      margin-top: 0;
+      width: auto;
+    }
+
+    .reward-relative .bottom {
+      flex-direction: column;
+    }
+
+    .reward-relative .pay-text {
+      width: 80%;
+      margin: 5px auto;
+      border: 1px solid silver;
+      padding: 6px;
+      border-radius: 4px;
+    }
+
+    .reward-body h2:after {
+      right: 40px;
+    }
+
+    .reward-body h2:after,
+    .reward-body h2:before {
+      font-size: 60px;
+    }
+
+    .reward-body h2:before {
+      left: 20px;
+    }
+  }
+</style>
+<script>
+  !function () {
+    var mask = document.querySelector('.reward-mask');
+    let close = document.querySelector('.reward-relative .close');
+    let rewardBtn = document.querySelector('.reward-btn');
+
+    let zfb = document.querySelector('#zfb'),
+      wx = document.querySelector('#wx'),
+      zfbBtn = document.querySelector('#zfbBtn'),
+      wxBtn = document.querySelector('#wxBtn');
+
+    if (zfbBtn && wxBtn) {
+      zfbBtn.addEventListener('click', () => {
+        jQuery.Velocity(zfb, 'transition.slideLeftIn', {
+          duration: 400
+        });
+        jQuery.Velocity(wx, 'transition.slideRightOut', {
+          display: 'none',
+          duration: 400
+        });
+      });
+
+      wxBtn.addEventListener('click', () => {
+        jQuery.Velocity(wx, 'transition.slideRightIn', {
+          duration: 400
+        });
+        jQuery.Velocity(zfb, 'transition.slideLeftOut', {
+          display: 'none',
+          duration: 400
+        });
+      });
+    }
+
+    rewardBtn.addEventListener('click', (e) => {
+      jQuery.Velocity(mask, 'transition.slideDownIn', {
+        duration: 400
+      })
+    });
+
+    close.addEventListener('click', (e) => {
+      e.preventDefault();
+      jQuery.Velocity(mask, 'transition.slideUpOut', {
+        duration: 400
+      })
+    })
+  }()
+</script>
+
   </div>
 </body>
 
@@ -1261,7 +1718,6 @@
       speed: 200
     });
   </script>
-
 
 
 
