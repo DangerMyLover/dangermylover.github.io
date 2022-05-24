@@ -8,7 +8,7 @@
 <meta name="keywords" content="猫子门的博客">
 <meta name="description" content="你们必晓得真理，真理必叫你们得以自由。 - [约8:32]">
 <meta name="theme-color" content="#000">
-<title>2020加拿大移民报告简析：有多少留学生留在了加拿大？篇一 | 猫子门的球场</title>
+<title>Salzman (2017) Behavioral Real Estate | 猫子门的球场</title>
 <link rel="shortcut icon" href="/favicon.ico?v=1653363629872">
 <link rel="stylesheet" href="/media/css/gemini.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
@@ -41,7 +41,7 @@
 
 
 
-  <meta name="description" content="2020加拿大移民报告简析：有多少留学生留在了加拿大？篇一" />
+  <meta name="description" content="Salzman (2017) Behavioral Real Estate" />
   <meta name="keywords" content="" />
 </head>
 
@@ -197,8 +197,7 @@
       <div class="sidebar-body gemini" id="sidebar_body">
         
           
-            <div class="post-side-meta" id="post_side_meta">
-              
+            
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
     <img class="site-author-image right-motion" src="/images/avatar.png"/>
@@ -260,197 +259,6 @@
 
 
 </div>
-            </div>
-            <div class="post-toc sidebar-body-active" id="post_toc" style="opacity: 1;">
-              <div class="toc-box right-motion">
-  <div class="toc-wrapper  auto"
-    id="toc_wrapper">
-    <ul class="markdownIt-TOC">
-<li><a href="#2020%E5%8A%A0%E6%8B%BF%E5%A4%A7%E5%B9%B4%E5%BA%A6%E7%A7%BB%E6%B0%91%E5%9B%BD%E4%BC%9A%E6%8A%A5%E5%91%8A">2020加拿大年度移民国会报告</a>
-<ul>
-<li><a href="#%E5%9B%BD%E9%99%85%E5%AD%A6%E7%94%9F%E7%9B%B8%E5%85%B3%E6%95%B0%E6%8D%AE">国际学生相关数据</a></li>
-<li><a href="#%E5%B7%A5%E7%AD%BE%E7%9B%B8%E5%85%B3%E6%95%B0%E6%8D%AE">工签相关数据</a></li>
-<li><a href="#%E6%B0%B8%E5%B1%85%E7%9B%B8%E5%85%B3%E6%95%B0%E6%8D%AE">永居相关数据</a></li>
-</ul>
-</li>
-</ul>
-
-  </div>
-</div>
-
-<script>
-
-  let lastTop = 0, lList = [], hList = [], postBody, lastIndex = -1;
-  let active = 'active-show', activeClass = 'active-current';
-  let tocWrapper = document.querySelector('#toc_wrapper');
-  let tocContent = tocWrapper.children[0];
-  let autoNumber = tocWrapper && tocWrapper.classList.contains('auto-number');
-
-  function addTocNumber(elem, deep) {
-    if (!elem) {
-      return;
-    }
-    let prop = elem.__proto__;
-
-    if (prop === HTMLUListElement.prototype) {
-      for (let i = 0; i < elem.children.length; i++) {
-        addTocNumber(elem.children[i], deep + (i + 1) + '.');
-      }
-    } else if (prop === HTMLLIElement.prototype) {
-      // 保存li元素
-      if (elem.children[0] && elem.children[0].__proto__ === HTMLAnchorElement.prototype) {
-        lList.push(elem);
-      }
-      for (let i = 0; i < elem.children.length; i++) {
-        let cur = elem.children[i];
-        if (cur.__proto__ === HTMLAnchorElement.prototype) {
-          if (autoNumber) {
-            cur.text = deep + ' ' + cur.text;
-          }
-        } else if (cur.__proto__ === HTMLUListElement.prototype) {
-          addTocNumber(cur, deep);
-        }
-      }
-    }
-  }
-
-  function removeParentActiveClass() {
-    let parents = tocContent.querySelectorAll('.' + active)
-    parents.forEach(function (elem) {
-      elem.classList.remove(active);
-    });
-  }
-
-  function addActiveClass(index) {
-    if (index >= 0 && index < hList.length) {
-      lList[index].classList.add(activeClass);
-    }
-  }
-
-  function removeActiveClass(index) {
-    if (index >= 0 && index < hList.length) {
-      lList[index].classList.remove(activeClass);
-    }
-  }
-
-  function addActiveLiElemment(elem, parent) {
-    if (!elem || elem === parent) {
-      return;
-    } else {
-      if (elem.__proto__ === HTMLLIElement.prototype) {
-        elem.classList.add(active);
-      }
-      addActiveLiElemment(elem.parentElement, parent);
-    }
-  }
-
-  function showToc() {
-    if (tocWrapper) {
-      postBody = document.querySelector('#post_body');
-      for (let i = 0; i < postBody.children.length; i++) {
-        if (postBody.children[i].__proto__ === HTMLHeadingElement.prototype) {
-          hList.push(postBody.children[i]);
-        }
-      }
-      if (tocWrapper.classList.contains('compress')) {
-        tocContent.classList.add('closed');
-      } else if (tocWrapper.classList.contains('no_compress')) {
-        tocContent.classList.add('expanded');
-      } else {
-        if (hList.length > 10) {
-          active = 'active-hidden'
-          tocContent.classList.add('closed');
-        } else {
-          tocContent.classList.add('expanded');
-        }
-      }
-    }
-  }
-
-  (function () {
-    // 处理不是从#一级标题开始目录
-    if (tocContent.children.length === 1 && tocContent.children[0].__proto__ === HTMLLIElement.prototype) {
-      let con = tocContent.children[0].children[0];
-      tocContent.innerHTML = con.innerHTML;
-    }
-    let markdownItTOC = document.querySelector('.markdownIt-TOC');
-    let innerHeight = window.innerHeight;
-    markdownItTOC.style = `max-height: ${innerHeight - 80 > 0 ? innerHeight - 80 : innerHeight}px`
-    addTocNumber(tocContent, '');
-  })();
-
-  document.addEventListener('scroll', function (e) {
-    if (lList.length <= 0) {
-      return;
-    }
-    let scrollTop = document.scrollingElement.scrollTop + 10;
-    let dir;
-
-    if (lastTop - scrollTop > 0) {
-      dir = 'up';
-    } else {
-      dir = 'down';
-    }
-
-    lastTop = scrollTop;
-    if (scrollTop <= 0) {
-      if (lastIndex >= 0 && lastIndex < hList.length) {
-        lList[lastIndex].classList.remove(activeClass);
-      }
-      return;
-    }
-
-    let current = 0, hasFind = false;
-    for (let i = 0; i < hList.length; i++) {
-      if (hList[i].offsetTop > scrollTop) {
-        current = i;
-        hasFind = true;
-        break;
-      }
-    }
-    if (!hasFind && scrollTop > lList[lList.length - 1].offsetTop) {
-      current = hList.length - 1;
-    } else {
-      current--;
-    }
-    if (dir === 'down') {
-      if (current > lastIndex) {
-        addActiveClass(current);
-        removeActiveClass(lastIndex)
-        lastIndex = current;
-        removeParentActiveClass();
-        lList[current] && addActiveLiElemment(lList[current].parentElement, tocContent);
-      }
-    } else {
-      if (current < lastIndex) {
-        addActiveClass(current);
-        removeActiveClass(lastIndex);
-        lastIndex = current;
-        removeParentActiveClass();
-        lList[current] && addActiveLiElemment(lList[current].parentElement, tocContent);
-      }
-    }
-  });
-
-
-  window.addEventListener('load', function () {
-    showToc();
-    document.querySelector('#sidebar').style = 'display: block;';
-    tocWrapper.classList.add('toc-active');
-    setTimeout(function () {
-      if ("createEvent" in document) {
-        let evt = document.createEvent("HTMLEvents");
-        evt.initEvent("scroll", false, true);
-        document.dispatchEvent(evt);
-      }
-      else {
-        document.fireEvent("scroll");
-      }
-    }, 500)
-  })
-
-</script>
-            </div>
           
         
       </div>
@@ -538,21 +346,21 @@
           <div class="section bg-color post post-page">
             <section class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="https://dangermylover.github.io/post/2020-jia-na-da-yi-min-bao-gao-jian-xi-you-duo-shao-liu-xue-sheng-liu-zai-liao-jia-na-da-pian-yi/"> 2020加拿大移民报告简析：有多少留学生留在了加拿大？篇一 </a>
+    <a class="post-title-link" href="https://dangermylover.github.io/post/salzman-2017-behavioral-real-estate/"> Salzman (2017) Behavioral Real Estate </a>
   </h1>
   <div class="post-meta">
     
     <span class="meta-item pc-show">
       <i class="fa fa-calendar-o"></i>
       <span class="language" data-lan="publish">发布于</span>
-      <span class="publish-time" data-t="2022-03-19 10:38:43">2022-03-19</span>
+      <span class="publish-time" data-t="2022-05-23 10:31:08">2022-05-23</span>
       <span class="post-meta-divider pc-show">|</span>
     </span>
     
     <span class="meta-item">
       <i class="fa fa-clock-o"></i>
       <span
-        >8<span class="language" data-lan="minute"
+        >3<span class="language" data-lan="minute"
           >分钟</span
         ></span
       >
@@ -561,7 +369,7 @@
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
       <span
-        >2209<span class="pc-show language" data-lan="words"
+        >879<span class="pc-show language" data-lan="words"
           >字数</span
         ></span
       >
@@ -571,85 +379,25 @@
 </section>
 
             <div class="post-body next-md-body" id="post_body">
-              <p><strong>2020加拿大年度移民国会报告</strong>（受众：国会议员、公开；发表：加拿大移民、难民和公民部）<br>
-<strong>2020快速通道移民年末报告</strong>（受众：公开；发表：加拿大移民、难民和公民部）</p>
-<p>首先说一下为什么忽然看起了这两份报告。<br>
-早上看书看到住房供应这一块，就想去看看大多伦多地区的住房供应是如何被新冠疫情影响的。毕竟住房需求旺盛，本来大多地区加快建设的新房被迫停工，肯定会造成供应减少。<br>
-结果到多伦多建筑和土地开发协会官网https://bildgta.ca，一看，建了多少房到没看到，可是他提到一个数据。</p>
-<blockquote>
-<p>大多伦多地区每年新增人口达<strong>10万人</strong>。</p>
-</blockquote>
-<p>好家伙！每年人口+10万，这是要买多少房？真的假的不会唬我的吧！<br>
-结果看了联合国发表的数据，这数据居然是真的（近年大概在9万多这样）。10万人买起房来，可不是要昏天暗地？<br>
-在看细节，这10万人中有多少是新移民/临时居民？答案是87%，粗略地说，8.7万人。就是这帮人（包括我自己在内）为加拿大的经济献血。<br>
-其实现在想想也没啥。这8万人里留学生就得有50%以上吧（全国留学生增长率15%，大多伦多地区只会更高，也许20%-25%）？但当时觉得这人口增长真是炸裂。<br>
-<strong>所以立马就担心这房价还能降吗？</strong><br>
-能不能降，还得看这帮新移民中间有多少是房屋的潜在买主，即实际需求的增长。难民、技工类（NOC列表B类）的移民恐怕一时半会不会成为市场需求的一部分，如果他们是这8万多人里的主力，那么实际市场需求就不算增长很多。就怕这8万人里大多数是专业类移民（NOC列表A类或0类，当然0类不可能会有很多，因为是管理层）。<br>
-所以你看，是不是应该研究一下加拿大移民报告？</p>
-<h1 id="2020加拿大年度移民国会报告">2020加拿大年度移民国会报告</h1>
-<p>第一篇搜到的是这份报告。因为面对的是国会议员，报告自然需要深入浅出，不能让议员们看不懂对吧。</p>
-<blockquote>
-<p>2020年加拿大签发了577万份临时移民文件（包括旅游签证、工签、学签）。其中40万份工签。<br>
-共34万人获得永居权，其中7.5万人从工签或学签转为永居。</p>
-</blockquote>
-<p><strong>有意思！</strong><br>
-一年发40万分工签，其中留学生转工签的大概会不会有70%以上？暂且算30万留学生获得工签好了。那么其中有多少人永居？7万人恐怕还不到。什么意思，大概就是说最高仅有25%的毕业生能获得永居。其他人都回国了。</p>
-<blockquote>
-<p>2017至2018年，移民人口净增长为加拿大人口总增长的80%，余下的20%为本土人口自然增长。加拿大人口增长的主因几乎全归因为新移民和临时居民的涌入</p>
-</blockquote>
-<p>这句话也就是说<strong>加拿大的人口增长得感谢留学生、新移民</strong>。<br>
-那么有<strong>多少新移民为加拿大的经济添砖加瓦呢？移民5年内为71%，10年内上升到76%。剩下的24%的新移民是永远不工作的</strong>。哈哈哈哈哈。非常的符合大家的想象，是不是？你看看多伦多Hillcrest居民区（是大陆新移民聚居区中的一块）的经济数据，受教育水平高于多伦多平均值，但收入却很低，且相当部分收入来自投资收入（收房租、买基金什么的）和政府救济金。说明新移民徒有高学历，却找不到与教育水平相当的工作。<br>
-再看看这一条数据。</p>
-<blockquote>
-<p>2018年有9%的小企业雇佣了持工签的临时居民。</p>
-</blockquote>
-<p>持工签的临时居民，主力是毕业后的留学生。感觉没有多少能就业啊。相比之下，<strong>加拿大26%的工作者是第一代移民</strong>。<br>
-这几条就在告诉你留学生和新移民要工作是有多么不容易。应有很多人最后是妥协、降低要求就业的。<br>
-所以<strong>新移民的主要经济来源，大概是从原属国转移过来的</strong>。<br>
-那么，新移民中间购房的有多少比例？这里暂时看不到，但是有一条难民的数据。</p>
-<blockquote>
-<p>3个<strong>难民</strong>中有2个（66.7%）移居加拿大10年内购置了房产。</p>
-</blockquote>
-<p>这个也没想到。难民那么有钱吗？不过，<strong>难民的确在政治参与度、公民热情、劳动等方面均表现出很强的活力</strong>。不像一些新移民，相比之下坐吃山空，固步自封，不参与实体经济、不参与劳动。难怪加拿大那么喜欢难民。</p>
-<h2 id="国际学生相关数据">国际学生相关数据</h2>
-<p>本职工作，这部分必须仔细看。</p>
-<blockquote>
-<p>2019年，加拿大境内存有国际学生近83万人，其中有40万新国际学生。</p>
-</blockquote>
-<p>天啦噜，这是什么变态数据！**一共83万人，其中一半40万是新的，而且前面的2018年的新生人数是35万左右。那么在加拿大3年以上的学生只有可怜的8万人！**真是太可怕，其他人都去哪儿了！都读不下去了，毕业了还是都毕业或者变成移民了！平均国际学生只会在加拿大学2年左右吗？</p>
-<blockquote>
-<p>2019年，11566名学签持有人转为永居。</p>
-</blockquote>
-<p>这个数据应该不包括学签毕业后转工签，然后再转永居的。这个数据恐怕没太多意义。</p>
-<blockquote>
-<p>2018年加拿大的国际学生共计付出216亿加元的学费。</p>
-</blockquote>
-<p>这个的确是……</p>
-<h2 id="工签相关数据">工签相关数据</h2>
-<blockquote>
-<p>2019年，<strong>9万8千人通过临时外国工人计划获得工签</strong>，30万7千人则通过国际人才流通计划获得工签。</p>
-</blockquote>
-<p>临时外国工人计划就是留学生毕业后获得工签的途径。有多少人毕业拿到工签？10万人。还记得新学生是多少人吗？40万。如果新生增长带来的误差和其他非国际学生进入临时外国工人计划的人口比例相互抵消，<strong>估计也就是25%左右的留学生可以拿到毕业工签呗</strong>。<br>
-顺带一提，30万7千人这个国际人才流通计划是你在加拿大以外申请的。比如我父亲、母亲的某些同事就是通过这个渠道移民的。</p>
-<blockquote>
-<p>2019年，6万3千位工签持有者转为永居。</p>
-</blockquote>
-<p>所以就是说这10万拿到工签的人中间大概有6万多拿到永居。故此<strong>留学生毕业后永居的比例应该不会超过15%</strong>。这个数据符合我的（也是很多老移民对此的）预期和估测。</p>
-<h2 id="永居相关数据">永居相关数据</h2>
-<p>这个部分很关键，拿到永居的人群（新移民）才是购房的主力人群。</p>
-<blockquote>
-<p>2019年，新移民人数达34万。<strong>所有的新移民中，58%来自经济类移民</strong></p>
-</blockquote>
-<p>经济类移民就是为了促进加拿大经济整体发展、扩充劳力而吸纳的移民。其他的42%为团聚移民、人道移民、难民。这类人群就是购房的主力，我的竞争对手。<br>
-算一下，<strong>全国新移民人数34万，大多伦多地区吸纳了其中的8.7万，大概是25%</strong>。好样的，多伦多君！真棒，多伦多君！<br>
-大多伦多地区8.7万的新移民中间按58%的比例，大概有<strong>5万人是经济类移民</strong>。<br>
-前面说到留学生毕业后永居的全国大概有6万人，按照25%的比例算，<strong>估计大多伦多地区有1.5万毕业生获得永居</strong>。当然这个估算肯定是不准的。<br>
-本来觉得难民不是购房主力，现在看来，倒也未必。但是暂且不思考难民吧。这个群体即使可以购房，受债务市场的影响也会比较大，毕竟收入应当不会属于高收。</p>
-<blockquote>
-<p>2019年，经济类移民人数为19万7千。</p>
-</blockquote>
-<p>有了这个总数，我们再进入下一篇，结合<strong>2020快速通道移民年末报告</strong>看一看到底留学生毕业后永居的概率是怎么样的，以及经济类移民中有多少是房产的潜在买家。</p>
-<p>本篇完。</p>
+              <p>房地产市场中的行为经济学……这篇论文是Farlow流派的继承，认为房市没有什么基准可看，没有什么线性模型可以被采纳，必须用行为经济学的方法来分析。</p>
+<p>还记得Farlow说的<strong>房地产六大指标</strong>吗？即收入、利率、房屋库存量、人口变化、信用、税法。1980年代开始，经济学家开始意识到房市是无效市场，不能采用有效市场假说。Case和Shiller发现房产价值正自相关（正序列相关），前一年的价格变化将在下一年继续发酵，而利率（以及其他所有基准参数）的影响却未能在房价中有效的体现。Cutler等人也发现了强烈的正自相关，此序列相关效果能够影响到三年的时期。而Brown和Matysiak发现行为动量（即自相关）能解释80%的价格变化，所以未来价格可以被现在价格所预测。许多其他研究也支持了市场无效、未来价格可被历史价格影响的结论。</p>
+<p>Quigley认为，虽然市场指标很重要，但是看市场指标没法很好预测房价。实际上，指标只能解释10%-40%的房价变化。Farlow也同意，并认为房价增长的原因不能用供需理论来解释。2012年，Muellbauer研究了偶然的信用放松刺激了房价大涨/大大偏离基准的情况，认为传统经济理论不足以解释房市。总之，房价波动大，而波动并不是由指标数据来造成的，而是由消费者和企业的行为造成的。</p>
+<p>本来，不依靠指标而进行的定价会被套现行为所惩罚，然而，实际上在房市，消费者和企业并不套现。套现也极其困难、危险。原因有几个。</p>
+<ol>
+<li>套现者需要市场中有足够的其他套现者。没有足够的套现者，价格偏离可能长期持续，这样套现在短期内就是亏损的。</li>
+<li>市场没办法得到“价格现在太高了/太低了/偏离了基准”这样的共识，因为没有人可以定准。</li>
+<li>房子是区别化的资产，也没有好的替代品，所以房市是分隔的。</li>
+<li>没有中央化的交易平台，所以信息不流通、不全面。</li>
+<li>交易成本高昂，这样要想做空，风险就太大了。</li>
+</ol>
+<p>既然在泡沫存在时不能套利，那就只好最大程度利用行为动量去获取利益。这样，房市就充斥着跟随行为动量（跟风）做出决定的人。房产的卖家也会因为与房子的情绪、情感联结而高估房价。</p>
+<p>有人认为，政策和税法能影响房价，但是反对者认为政策和税法单独都无法解释房价大涨的原因。实际上，房价上涨的原因根本无法用任何基准数据的变化来解释。Seslen发现，<strong>交易喜欢在房价上涨，或即将上涨时发生，而在房价下降、即将下降时交易活动将减少。不理性的交易在房价下降时更多，在房价上升时较少。</strong></p>
+<p>总之，房市是无效市场，因为：</p>
+<ol>
+<li>房价可以被预测；</li>
+<li>房价总是偏离基准所指示的；</li>
+<li>房价离基准价格波动太大。</li>
+</ol>
 
             </div>
             
@@ -666,7 +414,7 @@
     </li>
     <li class="post-copyright-link">
       <strong class="language" data-lan="link">本文链接：</strong>
-      <a href="https://dangermylover.github.io/post/2020-jia-na-da-yi-min-bao-gao-jian-xi-you-duo-shao-liu-xue-sheng-liu-zai-liao-jia-na-da-pian-yi/" title="2020加拿大移民报告简析：有多少留学生留在了加拿大？篇一">https://dangermylover.github.io/post/2020-jia-na-da-yi-min-bao-gao-jian-xi-you-duo-shao-liu-xue-sheng-liu-zai-liao-jia-na-da-pian-yi/</a>
+      <a href="https://dangermylover.github.io/post/salzman-2017-behavioral-real-estate/" title="Salzman (2017) Behavioral Real Estate">https://dangermylover.github.io/post/salzman-2017-behavioral-real-estate/</a>
     </li>
     <li class="post-copyright-license">
       <strong class="language" data-lan="copyright">版权声明： </strong>
@@ -680,14 +428,14 @@
     <div class="nav-prev">
       
         <i class="fa fa-chevron-left"></i>
-        <a class="nav-pc-next" title="Crash &amp; Beyond: Causes &amp; Consequences of the Global Financial Crisis - 03" href="https://dangermylover.github.io/post/crash-and-beyond-causes-and-consequences-of-the-global-financial-crisis-03/">Crash &amp; Beyond: Causes &amp; Consequences of the Global Financial Crisis - 03</a class="nav-pc-next">
-        <a class="nav-mobile-prev" title="Crash &amp; Beyond: Causes &amp; Consequences of the Global Financial Crisis - 03" href="https://dangermylover.github.io/post/crash-and-beyond-causes-and-consequences-of-the-global-financial-crisis-03/">上一篇</a>
+        <a class="nav-pc-next" title="Salzman (2017) Behavioral Real Estate 行为房产理论" href="https://dangermylover.github.io/post/salzman-2017-behavioral-real-estate-xing-wei-fang-chan-li-lun/">Salzman (2017) Behavioral Real Estate 行为房产理论</a class="nav-pc-next">
+        <a class="nav-mobile-prev" title="Salzman (2017) Behavioral Real Estate 行为房产理论" href="https://dangermylover.github.io/post/salzman-2017-behavioral-real-estate-xing-wei-fang-chan-li-lun/">上一篇</a>
       
     </div>
     <div class="nav-next">
       
-        <a class="nav-pc-next" title="2020加拿大移民报告简析：有多少留学生留在了加拿大？篇二" href="https://dangermylover.github.io/post/2020-jia-na-da-yi-min-bao-gao-jian-xi-you-duo-shao-liu-xue-sheng-liu-zai-liao-jia-na-da-pian-er/">2020加拿大移民报告简析：有多少留学生留在了加拿大？篇二</a>
-        <a class="nav-mobile-next" title="2020加拿大移民报告简析：有多少留学生留在了加拿大？篇二" href="https://dangermylover.github.io/post/2020-jia-na-da-yi-min-bao-gao-jian-xi-you-duo-shao-liu-xue-sheng-liu-zai-liao-jia-na-da-pian-er/">下一篇</a>
+        <a class="nav-pc-next" title="Farlow (2004) The UK Housing Market: Bubbles and Buyers" href="https://dangermylover.github.io/post/farlow-2004-the-uk-housing-market-bubbles-and-buyers/">Farlow (2004) The UK Housing Market: Bubbles and Buyers</a>
+        <a class="nav-mobile-next" title="Farlow (2004) The UK Housing Market: Bubbles and Buyers" href="https://dangermylover.github.io/post/farlow-2004-the-uk-housing-market-bubbles-and-buyers/">下一篇</a>
         <i class="fa fa-chevron-right"></i>
       
     </div>

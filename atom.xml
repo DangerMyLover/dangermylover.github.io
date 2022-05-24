@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dangermylover.github.io/</id>
     <title>猫子门的球场</title>
-    <updated>2022-05-13T03:21:51.351Z</updated>
+    <updated>2022-05-24T03:40:33.827Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dangermylover.github.io/"/>
     <link rel="self" href="https://dangermylover.github.io/atom.xml"/>
@@ -10,6 +10,64 @@
     <logo>https://dangermylover.github.io/images/avatar.png</logo>
     <icon>https://dangermylover.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, 猫子门的球场</rights>
+    <entry>
+        <title type="html"><![CDATA[Salzman (2017) Behavioral Real Estate 行为房产理论]]></title>
+        <id>https://dangermylover.github.io/post/salzman-2017-behavioral-real-estate-xing-wei-fang-chan-li-lun/</id>
+        <link href="https://dangermylover.github.io/post/salzman-2017-behavioral-real-estate-xing-wei-fang-chan-li-lun/">
+        </link>
+        <updated>2022-05-23T14:31:08.000Z</updated>
+        <content type="html"><![CDATA[<p>房地产市场中的行为经济学……这篇论文是Farlow流派的继承，认为房市没有什么基准可看，没有什么线性模型可以被采纳，必须用行为经济学的方法来分析。</p>
+<p>还记得Farlow说的<strong>房地产六大指标</strong>吗？即收入、利率、房屋库存量、人口变化、信用、税法。1980年代开始，经济学家开始意识到房市是无效市场，不能采用有效市场假说。Case和Shiller发现房产价值正自相关（正序列相关），前一年的价格变化将在下一年继续发酵，而利率（以及其他所有基准参数）的影响却未能在房价中有效的体现。Cutler等人也发现了强烈的正自相关，此序列相关效果能够影响到三年的时期。而Brown和Matysiak发现行为动量（即自相关）能解释80%的价格变化，所以未来价格可以被现在价格所预测。许多其他研究也支持了市场无效、未来价格可被历史价格影响的结论。</p>
+<p>Quigley认为，虽然市场指标很重要，但是看市场指标没法很好预测房价。实际上，指标只能解释10%-40%的房价变化。Farlow也同意，并认为房价增长的原因不能用供需理论来解释。2012年，Muellbauer研究了偶然的信用放松刺激了房价大涨/大大偏离基准的情况，认为传统经济理论不足以解释房市。总之，房价波动大，而波动并不是由指标数据来造成的，而是由消费者和企业的行为造成的。</p>
+<p>本来，不依靠指标而进行的定价会被套现行为所惩罚，然而，实际上在房市，消费者和企业并不套现。套现也极其困难、危险。原因有几个。</p>
+<ol>
+<li>套现者需要市场中有足够的其他套现者。没有足够的套现者，价格偏离可能长期持续，这样套现在短期内就是亏损的。</li>
+<li>市场没办法得到“价格现在太高了/太低了/偏离了基准”这样的共识，因为没有人可以定准。</li>
+<li>房子是区别化的资产，也没有好的替代品，所以房市是分隔的。</li>
+<li>没有中央化的交易平台，所以信息不流通、不全面。</li>
+<li>交易成本高昂，这样要想做空，风险就太大了。</li>
+</ol>
+<p>既然在泡沫存在时不能套利，那就只好最大程度利用行为动量去获取利益。这样，房市就充斥着跟随行为动量（跟风）做出决定的人。房产的卖家也会因为与房子的情绪、情感联结而高估房价。</p>
+<p>有人认为，政策和税法能影响房价，但是反对者认为政策和税法单独都无法解释房价大涨的原因。实际上，房价上涨的原因根本无法用任何基准数据的变化来解释。Seslen发现，<strong>交易喜欢在房价上涨，或即将上涨时发生，而在房价下降、即将下降时交易活动将减少。不理性的交易在房价下降时更多，在房价上升时较少。</strong></p>
+<p>总之，房市是无效市场，因为：</p>
+<ol>
+<li>房价可以被预测；</li>
+<li>房价总是偏离基准所指示的；</li>
+<li>房价离基准价格波动太大。</li>
+</ol>
+<p>在此基础上的市场反应可以归纳为<strong>行为房产理论</strong>。</p>
+<p>**房产，既是投资品，也是消费品。**很多研究着重于其投资品的方面，着眼于房子的金融和物理属性。一小部分研究探索了房子作为消费品的方面，研究拥有房产的社会和心里价值。这个方向非常重要，尤其考虑到房产交易在买家人生中的超低频率，超高价值。</p>
+<p>我们也要注意，房产市场由多个参与者组成，比如家庭购房者，企业购房者，中介，金融机构等。这些方面的相互作用会导致商业周期（升、降、升……）</p>
+<h1 id="房产金融和投资我们看重的是建筑物的价格还是家的价值">房产金融和投资：我们看重的是建筑物的价格，还是“家”的价值？</h1>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Salzman (2017) Behavioral Real Estate]]></title>
+        <id>https://dangermylover.github.io/post/salzman-2017-behavioral-real-estate/</id>
+        <link href="https://dangermylover.github.io/post/salzman-2017-behavioral-real-estate/">
+        </link>
+        <updated>2022-05-23T14:31:08.000Z</updated>
+        <content type="html"><![CDATA[<p>房地产市场中的行为经济学……这篇论文是Farlow流派的继承，认为房市没有什么基准可看，没有什么线性模型可以被采纳，必须用行为经济学的方法来分析。</p>
+<p>还记得Farlow说的<strong>房地产六大指标</strong>吗？即收入、利率、房屋库存量、人口变化、信用、税法。1980年代开始，经济学家开始意识到房市是无效市场，不能采用有效市场假说。Case和Shiller发现房产价值正自相关（正序列相关），前一年的价格变化将在下一年继续发酵，而利率（以及其他所有基准参数）的影响却未能在房价中有效的体现。Cutler等人也发现了强烈的正自相关，此序列相关效果能够影响到三年的时期。而Brown和Matysiak发现行为动量（即自相关）能解释80%的价格变化，所以未来价格可以被现在价格所预测。许多其他研究也支持了市场无效、未来价格可被历史价格影响的结论。</p>
+<p>Quigley认为，虽然市场指标很重要，但是看市场指标没法很好预测房价。实际上，指标只能解释10%-40%的房价变化。Farlow也同意，并认为房价增长的原因不能用供需理论来解释。2012年，Muellbauer研究了偶然的信用放松刺激了房价大涨/大大偏离基准的情况，认为传统经济理论不足以解释房市。总之，房价波动大，而波动并不是由指标数据来造成的，而是由消费者和企业的行为造成的。</p>
+<p>本来，不依靠指标而进行的定价会被套现行为所惩罚，然而，实际上在房市，消费者和企业并不套现。套现也极其困难、危险。原因有几个。</p>
+<ol>
+<li>套现者需要市场中有足够的其他套现者。没有足够的套现者，价格偏离可能长期持续，这样套现在短期内就是亏损的。</li>
+<li>市场没办法得到“价格现在太高了/太低了/偏离了基准”这样的共识，因为没有人可以定准。</li>
+<li>房子是区别化的资产，也没有好的替代品，所以房市是分隔的。</li>
+<li>没有中央化的交易平台，所以信息不流通、不全面。</li>
+<li>交易成本高昂，这样要想做空，风险就太大了。</li>
+</ol>
+<p>既然在泡沫存在时不能套利，那就只好最大程度利用行为动量去获取利益。这样，房市就充斥着跟随行为动量（跟风）做出决定的人。房产的卖家也会因为与房子的情绪、情感联结而高估房价。</p>
+<p>有人认为，政策和税法能影响房价，但是反对者认为政策和税法单独都无法解释房价大涨的原因。实际上，房价上涨的原因根本无法用任何基准数据的变化来解释。Seslen发现，<strong>交易喜欢在房价上涨，或即将上涨时发生，而在房价下降、即将下降时交易活动将减少。不理性的交易在房价下降时更多，在房价上升时较少。</strong></p>
+<p>总之，房市是无效市场，因为：</p>
+<ol>
+<li>房价可以被预测；</li>
+<li>房价总是偏离基准所指示的；</li>
+<li>房价离基准价格波动太大。</li>
+</ol>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Farlow (2004) The UK Housing Market: Bubbles and Buyers]]></title>
         <id>https://dangermylover.github.io/post/farlow-2004-the-uk-housing-market-bubbles-and-buyers/</id>
@@ -595,27 +653,6 @@
 <h1 id="那么扬帆起航">那么，扬帆起航？</h1>
 <p>是的。接下来的半年我估计都会常常发表自己的学习记录和心得。敬请期待！</p>
 <p>&lt;本文完&gt;</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[MV - 纪念宝宝来加拿大第一年“童心永驻”的时光]]></title>
-        <id>https://dangermylover.github.io/post/mv-ji-nian-bao-bao-lai-jia-na-da-di-yi-nian-tong-xin-yong-zhu-de-shi-guang/</id>
-        <link href="https://dangermylover.github.io/post/mv-ji-nian-bao-bao-lai-jia-na-da-di-yi-nian-tong-xin-yong-zhu-de-shi-guang/">
-        </link>
-        <updated>2022-02-14T09:48:52.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="请全屏欣赏">请全屏欣赏</h1>
-<h3 id="背景音乐forever-young-rocking-childrens-tale">背景音乐：<strong>Forever Young</strong> - <em>Rocking Children's Tale</em></h3>
-<iframe width="560" height="315" src="https://play.library.utoronto.ca/embed/3b9e3b8c29eff27c1d18192ea3a531b2" frameborder="0" allowfullscreen> iframe not supported </iframe>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[MV - 纪念我们玩滑雪板“雷鸣”般的快乐时光]]></title>
-        <id>https://dangermylover.github.io/post/mv-ji-nian-wo-men-wan-hua-xue-ban-de-kuai-le-shi-guang/</id>
-        <link href="https://dangermylover.github.io/post/mv-ji-nian-wo-men-wan-hua-xue-ban-de-kuai-le-shi-guang/">
-        </link>
-        <updated>2022-02-13T07:44:29.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="请全屏欣赏">请全屏欣赏</h1>
-<h3 id="背景音乐thunder-imagine-dragon">背景音乐：<strong>Thunder</strong> - <em>Imagine Dragon</em></h3>
-<iframe width="560" height="315" src="https://play.library.utoronto.ca/embed/6c74ee5e18e1cb37a0401788222aafca" frameborder="0" allowfullscreen> iframe not supported </iframe>
 ]]></content>
     </entry>
 </feed>
