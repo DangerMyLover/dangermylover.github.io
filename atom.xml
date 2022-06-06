@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dangermylover.github.io/</id>
     <title>猫子门的球场</title>
-    <updated>2022-06-06T00:40:04.564Z</updated>
+    <updated>2022-06-06T01:25:41.657Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dangermylover.github.io/"/>
     <link rel="self" href="https://dangermylover.github.io/atom.xml"/>
@@ -15,7 +15,7 @@
         <id>https://dangermylover.github.io/post/salzman-2017-behavioral-real-estate-xing-wei-fang-chan-li-lun/</id>
         <link href="https://dangermylover.github.io/post/salzman-2017-behavioral-real-estate-xing-wei-fang-chan-li-lun/">
         </link>
-        <updated>2022-05-20T14:31:08.000Z</updated>
+        <updated>2022-05-20T02:31:08.000Z</updated>
         <content type="html"><![CDATA[<p>房地产市场中的行为经济学……这篇论文是Farlow流派的继承，认为房市没有什么基准可看，没有什么线性模型可以被采纳，必须用行为经济学的方法来分析。</p>
 <p>还记得Farlow说的<strong>房地产六大指标</strong>吗？即收入、利率、房屋库存量、人口变化、信用、税法。1980年代开始，经济学家开始意识到房市是无效市场，不能采用有效市场假说。Case和Shiller发现房产价值正自相关（正序列相关），前一年的价格变化将在下一年继续发酵，而利率（以及其他所有基准参数）的影响却未能在房价中有效的体现。Cutler等人也发现了强烈的正自相关，此序列相关效果能够影响到三年的时期。而Brown和Matysiak发现行为动量（即自相关）能解释80%的价格变化，所以未来价格可以被现在价格所预测。许多其他研究也支持了市场无效、未来价格可被历史价格影响的结论。</p>
 <p>Quigley认为，虽然市场指标很重要，但是看市场指标没法很好预测房价。实际上，指标只能解释10%-40%的房价变化。Farlow也同意，并认为房价增长的原因不能用供需理论来解释。2012年，Muellbauer研究了偶然的信用放松刺激了房价大涨/大大偏离基准的情况，认为传统经济理论不足以解释房市。总之，房价波动大，而波动并不是由指标数据来造成的，而是由消费者和企业的行为造成的。</p>
@@ -93,7 +93,7 @@
 <p>后悔理论。人们害怕后悔，害怕做出错误的头里决定，故此不看上升的风险，为了不让自己后悔而进行投资。有研究指出，绝大多数的房产投资者其实是因为看别人赚了钱，怕自己后悔而在高位上船的，导致了低下的投资回报。</p>
 </li>
 <li>
-<p>财富幻象。在通胀的影响下，人们因为不重视名义价格和实际价格的区别，而不能很好的计算价值。此偏差的影响主要针对长期地产投资。极少有人在计算房贷偿还时，考虑了通胀。如果通胀低，人们会忘记他们的还贷周期变长（为什么？）</p>
+<p>财富幻象。在通胀的影响下，人们因为不重视名义价格和实际价格的区别，而不能很好的计算价值。此偏差的影响主要针对长期地产投资。极少有人在计算房贷偿还时，考虑了通胀。如果通胀低，人们会忘记他们的还贷周期变长（为什么？）。</p>
 </li>
 </ol>
 ]]></content>
