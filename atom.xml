@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dangermylover.github.io/</id>
     <title>猫子门的球场</title>
-    <updated>2022-06-26T21:23:25.835Z</updated>
+    <updated>2022-06-26T22:20:10.714Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dangermylover.github.io/"/>
     <link rel="self" href="https://dangermylover.github.io/atom.xml"/>
@@ -15,7 +15,7 @@
         <id>https://dangermylover.github.io/post/ghysels-2012-yu-ce-fang-di-chan-jie-ge/</id>
         <link href="https://dangermylover.github.io/post/ghysels-2012-yu-ce-fang-di-chan-jie-ge/">
         </link>
-        <updated>2022-06-24T16:23:41.000Z</updated>
+        <updated>2022-06-24T04:23:41.000Z</updated>
         <content type="html"><![CDATA[<p>前面的几篇论文笔记已经证明，<strong>因为房地产市场的无效性，其价格是可以被预测的</strong>。然而行为经济学的几位经济学家对预测价格没有兴趣，因为行为方面带来的偏差太多了。<br>
 这一篇，是回归到比较经典的线性预测模型，作者<strong>试图建立预测价格的模型</strong>。</p>
 <h1 id="引言">引言</h1>
@@ -24,6 +24,7 @@
 <blockquote>
 <p>这个观点非常重要，非常重要，非常重要，在多个论文、多个不同的国家、市场中得到印证。在稳定的经济环境中，房价和人口无关，房价和刚需无关，无关！人口、刚需这理由是房产经纪最擅长的说辞，不要被带节奏，无关，无关！</p>
 </blockquote>
+<p><strong>也许最透明的房价数据是售价中位数</strong>，但即使中位数也不能表达所售/在市场上的房子的质量，因此无法作为非常有效的指标。故此，我们需要一个“固定质量”的指标（安省地产协会的某个指标就是干这个的）。</p>
 ]]></content>
     </entry>
     <entry>
