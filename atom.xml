@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dangermylover.github.io/</id>
     <title>猫子门的球场</title>
-    <updated>2022-07-11T03:24:54.126Z</updated>
+    <updated>2022-07-12T04:06:53.917Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dangermylover.github.io/"/>
     <link rel="self" href="https://dangermylover.github.io/atom.xml"/>
@@ -15,7 +15,7 @@
         <id>https://dangermylover.github.io/post/ghysels-2012-yu-ce-fang-di-chan-jie-ge/</id>
         <link href="https://dangermylover.github.io/post/ghysels-2012-yu-ce-fang-di-chan-jie-ge/">
         </link>
-        <updated>2022-06-23T16:23:41.000Z</updated>
+        <updated>2022-06-23T04:23:41.000Z</updated>
         <content type="html"><![CDATA[<p>前面的几篇论文笔记已经证明，<strong>因为房地产市场的无效性，其价格是可以被预测的</strong>。然而行为经济学的几位经济学家对预测价格没有兴趣，因为行为方面带来的偏差太多了。<br>
 这一篇，是回归到比较经典的线性预测模型，作者<strong>试图建立预测价格的模型</strong>。</p>
 <h1 id="引言">引言</h1>
@@ -68,6 +68,21 @@
 <li>杠杆率（越大）与未来收益（越大）正相关。</li>
 </ol>
 <p>其他重要研究表明，杠杆率越高的房子，在经济危机时更敏感。大多数研究都同意，杠杆在房价变动中起到非常巨大的影响。</p>
+<h1 id="房市数据">房市数据</h1>
+<h2 id="几种房市基准数据定义">几种房市基准数据定义</h2>
+<h3 id="中位数">中位数</h3>
+<p>某个时期，某个地域内，交易成功的房产的中位数。注意：</p>
+<ol>
+<li>其不反映、考虑所售房子的质量。</li>
+<li>其变化可能由于地区经济局势导致（例如市场上的高价值房产忽然增加）。所以要注意分几种房型来看。<br>
+中位数可以在CREA网站内查询。<br>
+<strong><a href="https://creastats.crea.ca/mls/treb-median-price">多伦多/大多伦多中位数</a></strong><br>
+因为中位数基准的缺陷，故此考虑了房子质量和交易频率的重售基准、享乐基准才被更多地使用。</li>
+</ol>
+<h3 id="重售基准-repeat-sales-indices">重售基准 Repeat-Sales Indices</h3>
+<p>重售基准仅计算在某时期内，交易超过2次的房产，并以此来反映房市价值变化。<br>
+好处是，他统计的是同一个房子价格的变化，房子质量、特性也就不是问题了（虽然仍无法计算装修、扩建等事件带来的特质变化）。<br>
+坏处是，数据较少，重复出售的房子也许不具有代表整体数据的代表性。</p>
 ]]></content>
     </entry>
     <entry>
