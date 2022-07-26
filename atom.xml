@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dangermylover.github.io/</id>
     <title>猫子门的球场</title>
-    <updated>2022-07-12T04:06:53.917Z</updated>
+    <updated>2022-07-26T03:22:59.458Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dangermylover.github.io/"/>
     <link rel="self" href="https://dangermylover.github.io/atom.xml"/>
@@ -15,7 +15,7 @@
         <id>https://dangermylover.github.io/post/ghysels-2012-yu-ce-fang-di-chan-jie-ge/</id>
         <link href="https://dangermylover.github.io/post/ghysels-2012-yu-ce-fang-di-chan-jie-ge/">
         </link>
-        <updated>2022-06-23T04:23:41.000Z</updated>
+        <updated>2022-06-22T16:23:41.000Z</updated>
         <content type="html"><![CDATA[<p>前面的几篇论文笔记已经证明，<strong>因为房地产市场的无效性，其价格是可以被预测的</strong>。然而行为经济学的几位经济学家对预测价格没有兴趣，因为行为方面带来的偏差太多了。<br>
 这一篇，是回归到比较经典的线性预测模型，作者<strong>试图建立预测价格的模型</strong>。</p>
 <h1 id="引言">引言</h1>
@@ -82,7 +82,27 @@
 <h3 id="重售基准-repeat-sales-indices">重售基准 Repeat-Sales Indices</h3>
 <p>重售基准仅计算在某时期内，交易超过2次的房产，并以此来反映房市价值变化。<br>
 好处是，他统计的是同一个房子价格的变化，房子质量、特性也就不是问题了（虽然仍无法计算装修、扩建等事件带来的特质变化）。<br>
-坏处是，数据较少，重复出售的房子也许不具有代表整体数据的代表性。</p>
+坏处是，数据较少，重复出售的房子也许不具有代表整体数据的代表性。而且会有自回归的干扰。</p>
+<p>在美国，最知名的重售基准指标为S&amp;P/Case-Shiller Home Price Indices以及联邦房产金融机构发布的HPI Index。在加拿大，有<a href="https://housepriceindex.ca/"><strong>Teranet–National Bank House Price Index</strong></a>。</p>
+<h3 id="特征价格指数-hedonic-indices">特征价格指数 Hedonic Indices</h3>
+<p>特征价格指数将房子的价格分解为多个“特征”，例如房子大小、卧室数量、离学校远近、学区排名等。用这些特征去解释房价。<br>
+什么样的特征比较热门？包括：</p>
+<ul>
+<li>土地尺寸</li>
+<li>建筑尺寸</li>
+<li>卧房数量</li>
+<li>卫生间数量</li>
+<li>建筑年数<br>
+其他包括：</li>
+<li>车库尺寸</li>
+<li>空调</li>
+<li>游泳池</li>
+<li>壁炉</li>
+</ul>
+<p>然而，有一些难以衡量、量化的因子很难被计入这类模型，例如安静程度、采光等。这些非计量因子往往在高级建筑中体现。不过，经济学家会通过Dummy Variable来试图计入这些因子，且各不同模型得出的房价预估基本相同，说明也许这些难以计量的因子干扰较小，或干扰相互抵消。</p>
+<p>从某种意义上来说，重售基准指数是特征价格指数中间非常极端的一部分（同一座房子，意味着所有特征基本都等同）。</p>
+<p>Meese &amp; Wallace 1997年的研究认为，重售基准不能代表整个市场的情况，而特征价格指数的预估也并不太稳定。重售基准指数常常波动很大，而特征价格指数的预估，和中位数常常较为接近。</p>
+<p>这种指数假定，<strong>在不同经济情况下，出售的房屋特征不会变化（比如不会出现经济不好的时候豪宅忽然大量上市），而如果这个假定出了问题，则此模型就存在系统性偏差</strong>。要规避该偏差，可以不采用房屋的售价而<em>使用Appraisal的价格</em>，即房主自我股价或请专业估价师进行估价。在美国，这样的指数有国家地产投资信托议会制定的National Property Index。然而这样的指数相比真实市场的变动来说不仅滞后，而且相对平缓，不能很好地反映市场情况。</p>
 ]]></content>
     </entry>
     <entry>
