@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dangermylover.github.io/</id>
     <title>猫子门的球场</title>
-    <updated>2022-07-26T03:45:29.119Z</updated>
+    <updated>2022-07-30T21:47:50.906Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dangermylover.github.io/"/>
     <link rel="self" href="https://dangermylover.github.io/atom.xml"/>
@@ -32,7 +32,7 @@
         <id>https://dangermylover.github.io/post/ghysels-2012-yu-ce-fang-di-chan-jie-ge/</id>
         <link href="https://dangermylover.github.io/post/ghysels-2012-yu-ce-fang-di-chan-jie-ge/">
         </link>
-        <updated>2022-06-22T16:23:41.000Z</updated>
+        <updated>2022-06-22T04:23:41.000Z</updated>
         <content type="html"><![CDATA[<p>前面的几篇论文笔记已经证明，<strong>因为房地产市场的无效性，其价格是可以被预测的</strong>。然而行为经济学的几位经济学家对预测价格没有兴趣，因为行为方面带来的偏差太多了。<br>
 这一篇，是回归到比较经典的线性预测模型，作者<strong>试图建立预测价格的模型</strong>。</p>
 <h1 id="引言">引言</h1>
@@ -120,6 +120,17 @@
 <p>从某种意义上来说，重售基准指数是特征价格指数中间非常极端的一部分（同一座房子，意味着所有特征基本都等同）。</p>
 <p>Meese &amp; Wallace 1997年的研究认为，重售基准不能代表整个市场的情况，而特征价格指数的预估也并不太稳定。重售基准指数常常波动很大，而特征价格指数的预估，和中位数常常较为接近。</p>
 <p>这种指数假定，<strong>在不同经济情况下，出售的房屋特征不会变化（比如不会出现经济不好的时候豪宅忽然大量上市），而如果这个假定出了问题，则此模型就存在系统性偏差</strong>。要规避该偏差，可以不采用房屋的售价而<em>使用Appraisal的价格</em>，即房主自我股价或请专业估价师进行估价。在美国，这样的指数有国家地产投资信托议会制定的National Property Index。然而这样的指数相比真实市场的变动来说不仅滞后，而且相对平缓，不能很好地反映市场情况。</p>
+<h3 id="基于股市的基准">基于股市的基准</h3>
+<p>普通大众要投资房地产，就要通过<strong>投资房地产投资信托公司（REIT）的股票</strong>。所以REIT的股票回报走势可以作为判断房市的基准。<br>
+这种模型的问题也有几个。</p>
+<ol>
+<li>REIT的体量相比房产交易量来说太小，似乎不能反映整体房市的情况。</li>
+<li>REIT的数量随时间变化较大。</li>
+<li>REIT之间体量差别较大。</li>
+<li>REIT公司杠杆（负债）较大，资本较少，而股票衡量基于资本的收益，所以受公司收益影响被放大。</li>
+</ol>
+<p>故此，我们认为<strong>股市基准相比房市，波动更大，收益数值更高</strong>。</p>
+<h1 id="预测房市回报">预测房市回报</h1>
 ]]></content>
     </entry>
     <entry>
