@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dangermylover.github.io/</id>
     <title>猫子门的球场</title>
-    <updated>2022-07-30T21:47:50.906Z</updated>
+    <updated>2022-08-13T21:18:39.337Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dangermylover.github.io/"/>
     <link rel="self" href="https://dangermylover.github.io/atom.xml"/>
@@ -32,7 +32,7 @@
         <id>https://dangermylover.github.io/post/ghysels-2012-yu-ce-fang-di-chan-jie-ge/</id>
         <link href="https://dangermylover.github.io/post/ghysels-2012-yu-ce-fang-di-chan-jie-ge/">
         </link>
-        <updated>2022-06-22T04:23:41.000Z</updated>
+        <updated>2022-06-21T16:23:41.000Z</updated>
         <content type="html"><![CDATA[<p>前面的几篇论文笔记已经证明，<strong>因为房地产市场的无效性，其价格是可以被预测的</strong>。然而行为经济学的几位经济学家对预测价格没有兴趣，因为行为方面带来的偏差太多了。<br>
 这一篇，是回归到比较经典的线性预测模型，作者<strong>试图建立预测价格的模型</strong>。</p>
 <h1 id="引言">引言</h1>
@@ -131,6 +131,7 @@
 </ol>
 <p>故此，我们认为<strong>股市基准相比房市，波动更大，收益数值更高</strong>。</p>
 <h1 id="预测房市回报">预测房市回报</h1>
+<p><strong>许多研究都发现房产回报的Non-linearity，即不可预测性。并且也都发现了房价的变更会有延迟性。总结是，大多数论文发现房价有自相关性，且自相关性在数年的周期内持续为正，但在更长的周期，自相关性则将为负（因为调整在较长的周期内出现了），而这个自相关是否可以被利用则有争议。</strong></p>
 ]]></content>
     </entry>
     <entry>
